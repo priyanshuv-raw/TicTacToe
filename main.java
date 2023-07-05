@@ -24,6 +24,7 @@ class main{
                 System.out.println("Invalid Move!!\nTry Again -->\n");
                 continue;
             }
+            
             printBoard(board);
             gameOver = check(board);
             isFull(board);
@@ -63,7 +64,7 @@ class main{
                 return true;
             }
         }
-        else if(board[7]==board[6] && board[7] == board[8]){
+        else if(board[7]==board[6] && board[6] == board[8]){
             if(board[6]=='X'){
                 System.out.println("Player 1 Won\nGame Over");
                 return true;
